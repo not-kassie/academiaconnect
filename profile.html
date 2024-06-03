@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+
+<!--site basics -->
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Academia Connect</title>
+  <link href="client/src/index.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <!-- this section is the header section -->
+  <header>
+    <h1 class="head-column"><a href="/home"> Academia Connect</a></h1>
+    <div class="div-head">
+      <a href ="/notifications">
+        <img class="bell" src ="bell.png" alt="Bell icon">
+      </a>
+      <a href ="/applications">
+        <img class="appicon" src="applications.png" alt="Page icon">
+      </a>
+      <a href ="/saved">
+        <img class="saved" src="saved.png" alt="Bookmark">
+      </a>
+      <a href="/profile">
+        <img class="proficon" src="profile.jpeg" alt="silhouette">
+      </a>
+      <a href="/settings">
+        <img class="cog" src="settings.png" alt="Cog Image">
+      </a>
+    </div>
+  </header>
+
+  <main>
+    <hr class="double">
+
+    <div class="background">
+      <!--this needs to be edited to reflect profile information based on if they're a student or professor--> 
+      <div class="topper">
+        <img class="sizeprof" src="profile.jpeg" alt="profile pic">
+        <div class="infor">
+          <h1 class="y">Name: John Doe</h1>
+          <h2 class="y">Status: Professor</h2>
+          <h3 class="y">Email: jdoe@example.com</h3>
+          <!--button to edit profile -->
+          <form id="testert">
+            <button type = "submit" class="editprof">Edit Profile</button>
+          </form>
+        </div>
+      </div>
+      <div class="about">
+        <p class="x">About Me</p>
+        <!-- needs a blank box that can be filled in by the user -->
+        <!-- below does not show if no past or current projects -->
+        <p class="x">Current Projects </p>
+        <!-- showcases current projects input by the user --> 
+        <p class="x">Past Projects</p>
+        <!-- showcases past projects input by the user -->
+      </div>
+    </div>
+  </main>
+  <script>
+     //It was the only way to get the button to work, since it didn't work in the script js file   
+      document.getElementById("testert").addEventListener("submit", function(event) {
+        // Prevent the default form submission behavior 
+          event.preventDefault();
+
+          // Redirect to "profile.html"
+              window.location.href = "professor-profile.html";
+          });</script>
+</body>
+</html>

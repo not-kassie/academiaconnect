@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+        <!--site basics -->
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Academia Connect</title>
+    <link href="client/src/index.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body class="pro-background">  
+    <div class="pro-profileContainer">
+        <h2>Profile</h2>
+      <!-----Create Profile------->
+        <form id="pro-profileForm">
+            <div class="professor-info">
+                <label for="profile-picture">Profile picture: </label>
+                <input id="profile-picture" type="file" name="profile-picture" />
+            </div>
+            <div class="professor-info">
+                <label id="name-label">Name:</label>
+                <input id="name" type="text" placeholder="John Doe" required/>
+            </div>
+            <div class="professor-info">
+                <label for="positon">Position:</label>
+                <input type="text" id="position" name="position" placeholder="Enter your position">
+            </div>
+    <div class="professor-info">
+        <label for="department">Department:</label>
+        <input type="text" id="department" name="department" placeholder="Department">
+    </div>
+    <div class="professor-info">
+        <label for="yearsofExperience">Years of Experience:</label>
+        <input type="number" id="yearsofExperience" name="yearsofExperience" placeholder="Years of Experience">
+    </div>
+    <div class="student-info">
+        <label for="shortDescription">About me:                </label>
+        <textarea id="shortDescription" name="shortDescription" placeholder="Enter a short description about yourself"></textarea>
+    </div>
+    <div class="save-button">
+        <button type="submit" class="save-changes" id="pro-button" onclick="getInput()">Save Changes </button>
+    </div>
+        </form>
+    </div>
+      <script>
+        //It was the only way to get the button to work, since it didn't work in the script js file
+          document.getElementById("pro-profileForm").addEventListener("submit", function(event) {
+          // Prevent the default form submission behavior
+          event.preventDefault();
+
+          // Redirect to "profile.html"
+          window.location.href = "profilepro.html";
+      });
+      </script>
+      <script type="text/javascript">
+            function getInput() {
+                var name=document.getElementById('name').value;
+                sessionStorage.setItem("name", name);
+                var about=document.getElementById('shortDescription').value;
+                sessionStorage.setItem("about", about);
+                var position=document.getElementById('position').value;
+                sessionStorage.setItem("position", position);
+                var department=document.getElementById('department').value;
+                sessionStorage.setItem("department", department);
+                var yearsofExperience=document.getElementById('yearsofExperience').value;
+                sessionStorage.setItem("yearsofExperience", yearsofExperience);
+            }
+        </script>
+  </body>
+</html>
