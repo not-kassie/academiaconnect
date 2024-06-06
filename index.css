@@ -1,0 +1,603 @@
+html,
+
+html{
+  Overflow-y:scroll;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+/* formats links */
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* formats whole document */ 
+* {
+  overflow: hidden;
+  -webkit-box-sizing:border-box;
+    -moz-box-sizing: border-box;
+      box-sizing: border-box;
+  
+}
+
+main {
+  min-height: 100vh;
+  padding: 0rem 1rem;
+  flex: 1;
+  flex-direction: column
+}
+
+header{
+  margin: 1px 1px 1px 1px;
+  padding: 0 10px 0 0;
+  display: flex;
+}
+
+.div-head{
+  margin: auto;
+  width: 50%;
+  padding: -25px;
+  margin-top: 37px;
+  margin-right: -30px;
+}
+
+/* header formatting*/
+.head-column {
+  width: 70%;
+  padding: 0 10px 0 0; 
+  margin: 1px 1px 1px 30px;
+  font-size: 5rem;
+}
+.home-column {
+  width: 30%;
+  padding: 0 10px 0 0; 
+  margin: 1px 1px 1px 1px;
+  font-size: 2rem;
+  background-color: black;
+  color: white;
+  cursor: pointer;
+}
+.home-column:hover{
+  background-color: #2E3135;
+}
+.sign-column {
+  width: 30%;
+  padding: 0 10px 0 0; 
+  margin: 1px 1px 1px 1px;
+  font-size: 2rem;
+  background-color: black;
+  color: white;
+  white-space: nowrap;
+  cursor: pointer;
+}
+.sign-column:hover{
+  background-color: #2E3135;
+}
+.log-column {
+  width: 30%;
+  padding: 0 10px 0 0; 
+  margin: 1px 1px 1px 1px;
+  font-size: 2rem;
+  background-color: black;
+  white-space: nowrap;
+  color: white;
+  cursor: pointer;
+}
+.log-column:hover{
+  background-color: #2E3135;
+}
+
+/* makes the double line */
+hr.double {
+ border-top: 20px double;
+ border-bottom: none;
+}
+
+/*body*/
+.opener{
+  font-size: 50px;
+  margin: auto;
+  width: 100%;
+  padding: 10px;
+  text-align: center;
+}
+
+/* set up two columns for image and description */
+.body-form {
+  column-count: 2;
+  margin: 40px;
+  display: inline-flex;
+  justify-content: space-around;
+  display: flex;
+  flex-direction: row;
+}
+
+  
+.img {
+  width: 1050px;
+  height: 450px;
+  object-fit: fit;
+  margin-left: 110px;
+  padding-right: 50px;
+}
+.desc{
+  display: inline-flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  margin-right: 110px;
+}
+.sub{
+  font-size: 30px;
+  margin-left: 75px;
+  padding-top: 50px;
+  font-weight: lighter;
+  font-style: italic;
+}
+
+.intro{
+  font-size: 20px;
+  margin-top: 30px;
+  margin-right: 110px;
+  margin-left: 75px;
+  padding-top: 10px;
+  letter-spacing: 3px;
+  line-height: 1.5;
+}
+
+.tester{
+  padding: 10px;
+  justify-content: space-around;
+  align-content: center;
+}
+.button-container{
+  display: flex;
+  justify-content: center;
+}
+.SignUp{
+  font-size: 30px;
+  margin:22px;
+  margin-left: 80px;
+  margin-bottom: 25px;
+  background-color: black;
+  color: white;
+  padding: 10px 25px 10px 25px;
+  white-space: nowrap;
+  cursor: pointer;
+}
+.SignUp:hover{
+  background-color: #2E3135;
+}
+
+.LogIn{
+  font-size: 30px; 
+  margin:22px;
+  margin-left: 80px;
+  margin-bottom: 25px;
+  background-color: black;
+  color: white;
+  padding: 10px 25px 10px 25px;
+  white-space: nowrap;
+  cursor: pointer;
+}
+.LogIn:hover{
+  background-color: #2E3135;
+}
+
+.joinsub {
+  text-align: center;
+  font-size: 35px;
+}
+
+.loginForm{
+  display: flex;
+  flex-direction: column;
+}
+
+.existing {
+  margin: 1px 100px 1px 100px;
+}
+
+.signin{
+  background-color: transparent;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.emailsign{
+  font-size: 20px;
+  margin: 25px;
+  letter-spacing: 1px;
+  padding: 1px;
+  line-height: 1.5;
+  margin-bottom: 10px;
+}
+
+.passwordsign{
+  font-size: 20px;
+  margin: 25px;
+  letter-spacing: 1px;
+  padding: 1px;
+  line-height: 1.5;
+  margin-bottom: 10px;
+}
+
+.confirmsign{
+  font-size: 20px;
+  margin: 25px;
+  padding: 1px;
+  letter-spacing: 1px;
+  line-height: 1.5;
+}
+
+.submit-signup{
+  font-size: 15px; 
+  background-color: black;
+  color: white;
+  padding: 10px 15px 10px 15px;
+  margin: 25px 200px 25px 200px;
+  cursor: pointer;
+}
+
+.submit-login{
+  font-size: 15px; 
+  background-color: black;
+  color: white;
+  padding: 10px 15px 10px 15px;
+  margin: 10px 250px 10px 250px;
+  cursor: pointer;
+}
+
+.submit-signup:hover {
+  background-color: #2E3135;
+}
+
+.account-exists{
+  font-size: 15px;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.infoinput{
+  margin: 5px;
+  padding: 1px;
+  justify-content: space-around;
+  align-content: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.code {
+  background: #fafafa;
+  border-radius: 5px;
+  padding: 0.75rem;
+  font-size: 1.1rem;
+  font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
+    Bitstream Vera Sans Mono, Courier New, monospace;
+}
+
+/*Form pop up */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.4);
+}
+
+.modal-content {
+    background-color: #BEBEBE;
+    margin: 10% auto;
+    padding: 30px;
+    border: 1px solid #888;
+    width: 40%;
+    height: auto; 
+    display: flex;
+    flex-direction: column;
+}
+/*Close button */
+.close {
+  padding-top: 0%;
+  color: white;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+}
+.close:hover {
+  color: black;
+}
+
+.cog{
+  width: 75px;
+  height: 75px;
+  margin-left: 25px;
+  margin-bottom: 10px;
+}
+
+.proficon{
+  width: 75px;
+  height: 75px;
+  margin-left: 25px;
+  margin-bottom: 10px;
+}
+
+.saved{
+  width: 75px;
+  height: 75px;
+  margin-left: 25px;
+  margin-bottom: 10px;
+}
+
+.bell{
+  width: 75px;
+  height: 75px; 
+  margin-left: 25px;
+  margin-bottom: 10px;
+}
+
+.appicon{
+  width: 75px;
+  height: 75px; 
+  margin-left: 25px;
+  margin-bottom: 10px;
+}
+
+.background{
+  display: flex;
+  flex-direction: column;
+  background-color: lightgrey;
+  width: 70%;
+  margin: auto;
+  border: 3px solid black;
+}
+
+.heading{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+.browse{
+  width: 50%;
+  text-align: center;
+  font-weight: bolder;
+  color:black;
+  font-size: 50px;
+  margin: auto;
+  border: 3px solid black;
+}
+
+.search{
+  width: 50%;
+  text-align: center;
+  font-weight: bolder;
+  color: black;
+  font-size: 50px;
+  margin: auto;
+  border: 3px solid black;
+}
+
+.filter{
+  text-align: center;
+}
+
+.butt{
+  display: flex;
+  flex-direction: row;
+  width: 75%;
+  margin: auto;
+}
+
+.apply{
+  margin: auto;
+  width: 20%;
+  text-align: center;
+  color:white;
+  background-color: black;
+  font-size: 15px;
+  font-weight: bold;
+  padding: 5px;
+  cursor: pointer;
+}
+
+.cancel{
+  margin: auto;
+  width: 20%;
+  text-align: center;
+  color: white;
+  background-color: black;
+  font-size: 15px;
+  font-weight:bold;
+  padding: 5px;
+  cursor: pointer; 
+}
+
+.nonew{
+  text-align: center;
+  font-weight: lighter;
+}
+
+.topper{
+  display: flex;
+  flex-direction: row;
+}
+
+.infor{
+  display: flex;
+  flex-direction:column;
+  width: 50%;
+  margin: 10px 10px 10px 10px;
+}
+
+.sizeprof{
+  width: 45%;
+  length: 70px;
+  margin: 3%;
+}
+
+.about{
+  display: flex;
+  flex-direction: column;
+  margin: 30px;
+}
+
+.x{
+  font-weight: bolder;
+  font-size: 30px;
+}
+
+.y{
+  font-weight: bolder;
+  font-size: 30px;
+  margin: 10px;
+}
+
+.z {
+  font-size: 20px;
+  margin-top: -10px;
+}
+
+.editprof{
+  font-weight: bolder;
+  font-size: 20px;
+  margin: 125px 10px 10px 270px;
+  color: white;
+  background-color: black;
+  cursor: pointer;
+}
+
+.sett{
+  margin: auto; 
+}
+/*Professor profile*/ 
+.pro-background {
+    background: #dcd5d5cc;
+    margin-top: 15px;
+}
+.pro-profileContainer h2 {
+    font-size: 33px;
+}
+.pro-profileContainer {
+    background-color: #dcd5d5cc;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.professor-info {
+    margin-bottom: 20px;
+}
+.professor-info label {
+    display: block;
+    font-weight: bold;
+}
+.professor-info input[type="text"]{
+    width: 30%;
+    height: 25px;
+    padding: 10px;
+    font-size: 12px;
+}
+.professor-info input[type="number"]{
+    width: 30%;
+    height: 10px;
+    padding: 10px;
+    font-size: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+textarea {
+    width: 500px;
+    height: 50px;
+}
+
+/*Student profile*/ 
+.s-background {
+    background: #dcd5d5cc;
+    margin-top: 15px;
+}
+.s-profileContainer {
+    background-color: #dcd5d5cc;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+
+}
+.s-profileContainer h2 {
+    font-size: 33px;
+}
+.student-info {
+    margin-bottom: 20px;
+}
+.student-info label {
+    display: block;
+    font-weight: bold;
+}
+.gradeLevel{
+    width: 30%;
+    font-size: 14px;
+    padding: 10px;
+    height: 70px;
+}
+.student-info input[type="number"]{
+    width: 30%;
+    height: 30px;
+    padding: 10px;
+    font-size: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.student-info input[type="text"]{
+    width: 30%;
+    height: 25px;
+    padding: 10px;
+    font-size: 12px;
+}
+textarea {
+    width: 500px;
+    height: 50px;
+}
+/*Save button for both professor and student profile */
+.save-changes{
+    background-color: black;
+    color: #fff;
+    border: none;
+    width: 120px;
+    height: 40px;
+    padding: 10px 10px;
+    font-size: 15px;
+    border-radius: 5px;
+    white-space: nowrap;
+    cursor: pointer;
+} 
+/*Role buttons */
+input:is([type="radio"]) {
+  margin-left: 25px;
+}
+
+.select{
+  margin: auto;
+}
+
+.role{
+  margin: 20px;
+  text-align: center;
+  color:white;
+  background-color: black;
+  font-size: 15px;
+  font-weight: bold;
+  cursor: pointer;
+  flex-direction: row;
+}
